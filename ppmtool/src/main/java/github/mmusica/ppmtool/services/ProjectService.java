@@ -2,6 +2,7 @@ package github.mmusica.ppmtool.services;
 
 
 import github.mmusica.ppmtool.domain.Project;
+import github.mmusica.ppmtool.exceptions.ProjectIdException;
 import github.mmusica.ppmtool.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,12 @@ public class ProjectService {
     }
 
     public Project saveOrUpdateProject(Project project) {
-        return projectRepository.save(project);
+        try {
+            project.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
+            return projectRepository.save(project);
+        } catch (Exception e) {
+            throw new ProjectIdException("Project ID '%s' already exists".formatted(project.getProjectIdentifier().toUpperCase()));
+        }
+
     }
 }
