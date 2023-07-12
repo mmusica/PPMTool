@@ -1,6 +1,7 @@
 package github.mmusica.ppmtool.web;
 
 import github.mmusica.ppmtool.domain.Project;
+import github.mmusica.ppmtool.services.MapValidationErrorService;
 import github.mmusica.ppmtool.services.ProjectService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,21 +23,18 @@ import java.util.Map;
 public class ProjectController {
 
     private final ProjectService projectService;
+    private final MapValidationErrorService mapValidationErrorService;
 
     @Autowired
-    public ProjectController(ProjectService projectService) {
+    public ProjectController(ProjectService projectService, MapValidationErrorService mapValidationErrorService) {
         this.projectService = projectService;
+        this.mapValidationErrorService = mapValidationErrorService;
     }
 
     @PostMapping("")
     public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result) {
-
-        if (result.hasErrors()) {
-            Map<String, String> errorMessage = new HashMap<>();
-            result.getFieldErrors().
-                    forEach(fieldError -> errorMessage.put(fieldError.getField(), fieldError.getDefaultMessage()));
-            return new ResponseEntity<>(errorMessage, HttpStatus.BAD_REQUEST);
-        }
+        var errorMap = mapValidationErrorService.getFieldNameErrorMap(result);
+        if (errorMap != null) return errorMap;
         var projectCreated = projectService.saveOrUpdateProject(project);
         return new ResponseEntity<Project>(projectCreated, HttpStatus.CREATED);
     }
