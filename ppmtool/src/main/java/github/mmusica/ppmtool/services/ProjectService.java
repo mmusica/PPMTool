@@ -7,6 +7,8 @@ import github.mmusica.ppmtool.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProjectService {
     private final ProjectRepository projectRepository;
@@ -32,7 +34,10 @@ public class ProjectService {
         if (project == null) {
             throw new ProjectIdException("Project ID '%s' doesn't exist".formatted(identifier.toUpperCase()));
         }
-
         return project;
+    }
+
+    public Iterable<Project> findAllProjects() {
+        return projectRepository.findAll();
     }
 }
