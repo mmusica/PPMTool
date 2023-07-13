@@ -7,6 +7,7 @@ import github.mmusica.ppmtool.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 @Service
 public class ProjectService {
     private final ProjectRepository projectRepository;
@@ -34,6 +35,10 @@ public class ProjectService {
         }
 
         return project;
+    }
+
+    public Iterable<Project> findAllProjects() {
+        return projectRepository.findAll();
     }
 
     public void deleteProjectByIdentifier(String identifier) {
