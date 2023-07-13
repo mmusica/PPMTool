@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Added GET call ¸for finding all projects">
+    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Merged getAll">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/services/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/services/ProjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/web/ProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/web/ProjectController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="find_all_projects" />
+        <entry key="$PROJECT_DIR$/.." value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -108,7 +110,14 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1689158874349</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Merged getAll">
+      <option name="closed" value="true" />
+      <created>1689225827259</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1689225827259</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +125,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -126,7 +147,8 @@
     <MESSAGE value="Added project object" />
     <MESSAGE value="Added ProjectService and ProjectControler with first post call" />
     <MESSAGE value="Added proper responses to bad requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added proper responses to bad requests" />
+    <MESSAGE value="Merged getAll" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merged getAll" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

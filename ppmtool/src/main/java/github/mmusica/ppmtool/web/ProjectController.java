@@ -50,4 +50,10 @@ public class ProjectController {
         projectService.deleteProjectByIdentifier(projectId);
         return new ResponseEntity<>("Deleted", HttpStatus.OK);
     }
+
+    @PutMapping("/update")
+    public ResponseEntity<?> updateProjectByIdentifier(@Valid @RequestBody Project project) {
+        var updatedProject = projectService.updateProjectByIdentifier(project);
+        return new ResponseEntity<>(updatedProject, HttpStatus.OK);
+    }
 }

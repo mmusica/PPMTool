@@ -44,8 +44,23 @@ public class ProjectService {
     public void deleteProjectByIdentifier(String identifier) {
         Project project = projectRepository.findByprojectIdentifier(identifier.toUpperCase());
         if (project == null) {
-            throw new ProjectIdException("Project ID '%s' doesn't exist so it cannot be deleted".formatted(identifier.toUpperCase()));
+            throw new ProjectIdException("Project ID '%s' doesn't exist so it cannot be deleted".formatted
+                    (identifier.toUpperCase()));
         }
         projectRepository.delete(project);
+    }
+
+    public Project updateProjectByIdentifier(Project project) {
+        var foundProject = projectRepository.findByprojectIdentifier(project.getProjectIdentifier().toUpperCase());
+        if (foundProject == null) {
+            throw new ProjectIdException("Project ID '%s' doesn't exist so it cannot be deleted".formatted
+                    (project.getProjectIdentifier().toUpperCase()));
+        }
+        foundProject.setProjectName(project.getProjectName());
+        foundProject.setDescription(project.getDescription());
+        foundProject.setStart_date(project.getStart_date());
+        foundProject.setEnd_date(project.getEnd_date());
+        projectRepository.save(foundProject);
+        return foundProject;
     }
 }
