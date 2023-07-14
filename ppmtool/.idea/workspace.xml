@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="PUT call for updating project">
+    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Added new entities (Backlog, ProjectTask) and basic repositories for them">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Backlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/BacklogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/BacklogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,13 +53,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Uedemy project/Full Stack Project Spring Boot 2.0, ReactJS, Redux/PPMTool/ppmtool&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Uedemy project/Full Stack Project Spring Boot 2.0, ReactJS, Redux/PPMTool/ppmtool",
+    "settings.editor.selected.configurable": "settings.sync"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="PpmtoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="github.mmusica.ppmtool.PpmtoolApplication" />
@@ -115,7 +119,14 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1689225827259</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Added new entities (Backlog, ProjectTask) and basic repositories for them">
+      <option name="closed" value="true" />
+      <created>1689335202617</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1689335202618</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,7 +157,8 @@
     <MESSAGE value="Added ProjectService and ProjectControler with first post call" />
     <MESSAGE value="Added proper responses to bad requests" />
     <MESSAGE value="Merged getAll" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged getAll" />
+    <MESSAGE value="Added new entities (Backlog, ProjectTask) and basic repositories for them" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new entities (Backlog, ProjectTask) and basic repositories for them" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

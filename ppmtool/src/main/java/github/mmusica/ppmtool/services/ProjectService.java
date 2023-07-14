@@ -1,8 +1,10 @@
 package github.mmusica.ppmtool.services;
 
 
+import github.mmusica.ppmtool.domain.Backlog;
 import github.mmusica.ppmtool.domain.Project;
 import github.mmusica.ppmtool.exceptions.ProjectIdException;
+import github.mmusica.ppmtool.repositories.BacklogRepository;
 import github.mmusica.ppmtool.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,15 +13,25 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProjectService {
     private final ProjectRepository projectRepository;
+    private final BacklogRepository backlogRepository;
 
     @Autowired
-    public ProjectService(ProjectRepository projectRepository) {
+    public ProjectService(ProjectRepository projectRepository, BacklogRepository backlogRepository) {
         this.projectRepository = projectRepository;
+        this.backlogRepository = backlogRepository;
     }
 
     public Project saveOrUpdateProject(Project project) {
         try {
             project.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
+            if (project.getId() == null) {
+                var backlog = new Backlog();
+                project.setBacklog(backlog);
+                backlog.setProject(project);
+                backlog.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
+            } else {
+                project.setBacklog(backlogRepository.findByProjectIdentifier(project.getProjectIdentifier().toUpperCase()));
+            }
             return projectRepository.save(project);
         } catch (Exception e) {
             throw new ProjectIdException("Project ID '%s' already exists".formatted(project.getProjectIdentifier().toUpperCase()));
