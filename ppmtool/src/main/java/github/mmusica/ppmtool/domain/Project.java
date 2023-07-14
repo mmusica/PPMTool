@@ -14,6 +14,8 @@ public class Project {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Getter
+    @Setter
     private Long id;
 
     @Getter

@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="PUT call for updating project">
+      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Project/ProjectItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Project/ProjectItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/ProjectController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

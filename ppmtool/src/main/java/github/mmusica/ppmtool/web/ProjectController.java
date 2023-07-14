@@ -10,6 +10,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/project")
 @CrossOrigin
@@ -40,9 +42,8 @@ public class ProjectController {
     }
 
     @GetMapping("/all")
-    public ResponseEntity<?> getAllProjects() {
-        var projects = projectService.findAllProjects();
-        return new ResponseEntity<>(projects, HttpStatus.OK);
+    public Iterable<Project> getAllProjects() {
+        return projectService.findAllProjects();
     }
 
 
