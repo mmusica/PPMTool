@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="PUT call for updating project">
-      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/actions/projectActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/actions/projectActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/actions/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Project/ProjectItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Project/ProjectItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/reducers/projectReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/reducers/projectReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
