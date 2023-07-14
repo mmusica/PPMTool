@@ -1,5 +1,6 @@
 package github.mmusica.ppmtool.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -50,6 +51,13 @@ public class ProjectTask {
     @Setter
     @Column(updatable = false)
     private String projectIdentifier;
+
+    @Getter
+    @Setter
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REFRESH)
+    @JoinColumn(name = "backlog_id", nullable = false, updatable = false)
+    @JsonIgnore
+    private Backlog backlog;
 
     @PrePersist
     protected void onCreate() {
