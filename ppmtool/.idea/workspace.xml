@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Added Exception handling for ProjectTasks">
+      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/components/ProjectBoard/ProjectTasks/AddProjectTasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/components/ProjectBoard/ProjectTasks/AddProjectTasks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
