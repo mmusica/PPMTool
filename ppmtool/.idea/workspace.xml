@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Can add ProjectTask to backlog">
+    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Added GET call for all ProjectTasks by ID (projectIdentifier)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/ProjectTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/ProjectTaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectTaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/BacklogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/BacklogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +137,14 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1689573969819</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Added GET call for all ProjectTasks by ID (projectIdentifier)">
+      <option name="closed" value="true" />
+      <created>1689577341243</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1689577341243</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +178,8 @@
     <MESSAGE value="Added new entities (Backlog, ProjectTask) and basic repositories for them" />
     <MESSAGE value="Can add backlog and update project without losing backlog" />
     <MESSAGE value="Can add ProjectTask to backlog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can add ProjectTask to backlog" />
+    <MESSAGE value="Added GET call for all ProjectTasks by ID (projectIdentifier)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GET call for all ProjectTasks by ID (projectIdentifier)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
