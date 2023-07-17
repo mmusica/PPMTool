@@ -2,6 +2,7 @@ package github.mmusica.ppmtool.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -23,6 +24,7 @@ public class ProjectTask {
 
     @Getter
     @Setter
+    @NotBlank(message = "Project summary cannot be blank")
     private String summary;
 
     @Getter
