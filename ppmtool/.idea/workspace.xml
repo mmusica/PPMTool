@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Can add backlog and update project without losing backlog">
+    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Backlog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/ProjectTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/domain/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/domain/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/services/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/services/ProjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectTaskService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +51,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Uedemy project/Full Stack Project Spring Boot 2.0, ReactJS, Redux/PPMTool/ppmtool",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Uedemy project/Full Stack Project Spring Boot 2.0, ReactJS, Redux/PPMTool/ppmtool&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="PpmtoolApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="github.mmusica.ppmtool.PpmtoolApplication" />

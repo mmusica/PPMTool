@@ -25,10 +25,11 @@ public class ProjectService {
         try {
             project.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
             if (project.getId() == null) {
+                System.out.println("Tu sam");
                 var backlog = new Backlog();
+                backlog.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
                 project.setBacklog(backlog);
                 backlog.setProject(project);
-                backlog.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
             } else {
                 project.setBacklog(backlogRepository.findByProjectIdentifier(project.getProjectIdentifier().toUpperCase()));
             }
