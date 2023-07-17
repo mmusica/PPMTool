@@ -19,7 +19,7 @@ public class ProjectTask {
 
     @Getter
     @Setter
-    @Column(updatable = false)
+    @Column(updatable = false, unique = true)
     private String projectSequence;
 
     @Getter
@@ -56,7 +56,7 @@ public class ProjectTask {
 
     @Getter
     @Setter
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REFRESH)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "backlog_id", nullable = false, updatable = false)
     @JsonIgnore
     private Backlog backlog;

@@ -9,6 +9,8 @@ import github.mmusica.ppmtool.repositories.ProjectTaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProjectTaskService {
 
@@ -58,5 +60,36 @@ public class ProjectTaskService {
             throw new ProjectNotFoundException("Project with id %s not found".formatted(backlogId).toUpperCase());
         }
         return projectTaskRepository.findByProjectIdentifierOrderByPriority(backlogId);
+    }
+
+    public ProjectTask findPTbyProjectSequence(String backlog_id, String pt_id) {
+
+        var backlog = backlogRepository.findByProjectIdentifier(backlog_id);
+        if (backlog == null) {
+            throw new ProjectNotFoundException("Project with id %s not found".formatted(backlog_id));
+        }
+        var pt = projectTaskRepository.findByProjectSequence(pt_id);
+        if (pt == null) {
+            throw new ProjectNotFoundException("Project Task with id %s not found".formatted(pt_id));
+        }
+        if (!pt.getBacklog().getProjectIdentifier().equals(backlog_id)) {
+            throw new ProjectNotFoundException("Project Task with id %s doesn't exist in Project: %s".formatted(pt_id, backlog_id));
+        }
+
+        return pt;
+    }
+
+
+    public ProjectTask updateByProjectSequence(ProjectTask updatedTask, String backlog_id, String pt_id) {
+        var projectTask = findPTbyProjectSequence(backlog_id, pt_id);
+        projectTask = updatedTask;
+        return projectTaskRepository.save(projectTask);
+    }
+
+    public void deleteByProjectSequence(String backlog_id, String pt_id) {
+
+        var projectTask = findPTbyProjectSequence(backlog_id, pt_id);
+        projectTaskRepository.delete(projectTask);
+
     }
 }

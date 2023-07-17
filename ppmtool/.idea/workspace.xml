@@ -4,16 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Migrated to MYSQL database">
+    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Added Exception handling for ProjectTasks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/Backlog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/ProjectTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/ProjectTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/ProjectTaskRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/ProjectTaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/BacklogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/BacklogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/domain/Backlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/domain/Backlog.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/domain/ProjectTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/domain/ProjectTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/services/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/services/ProjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/repositories/ProjectTaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/repositories/ProjectTaskRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/services/ProjectTaskService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/services/ProjectTaskService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/web/BacklogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/web/BacklogController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +160,14 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1689579129891</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Added Exception handling for ProjectTasks">
+      <option name="closed" value="true" />
+      <created>1689582924715</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1689582924715</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,7 +203,8 @@
     <MESSAGE value="Can add ProjectTask to backlog" />
     <MESSAGE value="Added GET call for all ProjectTasks by ID (projectIdentifier)" />
     <MESSAGE value="Migrated to MYSQL database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrated to MYSQL database" />
+    <MESSAGE value="Added Exception handling for ProjectTasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Exception handling for ProjectTasks" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

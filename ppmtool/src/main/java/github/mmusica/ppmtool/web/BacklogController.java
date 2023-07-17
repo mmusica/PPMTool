@@ -40,4 +40,29 @@ public class BacklogController {
     public Iterable<ProjectTask> getProjectBacklog(@PathVariable String backlog_id) {
         return projectTaskService.findBacklog(backlog_id);
     }
+
+    @GetMapping("/{backlog_id}/{pt_id}")
+    public ResponseEntity<?> getProjectTask(@PathVariable String backlog_id, @PathVariable String pt_id) {
+        var foundPT = projectTaskService.findPTbyProjectSequence(backlog_id.toUpperCase(), pt_id.toUpperCase());
+        return new ResponseEntity<>(foundPT, HttpStatus.OK);
+    }
+
+    @PatchMapping("/{backlog_id}/{pt_id}")
+    public ResponseEntity<?> updateProjectTask(@Valid @RequestBody ProjectTask projectTask,
+                                               @PathVariable String backlog_id,
+                                               @PathVariable String pt_id,
+                                               BindingResult result) {
+        ResponseEntity<?> errorMap = mapValidationErrorService.getFieldNameErrorMap(result);
+        if (errorMap != null) {
+            return errorMap;
+        }
+        var updatedProjectTask = projectTaskService.updateByProjectSequence(projectTask, backlog_id.toUpperCase(), pt_id.toUpperCase());
+        return new ResponseEntity<>(updatedProjectTask, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{backlog_id}/{pt_id}")
+    public ResponseEntity<?> deleteProjectTask(@PathVariable String backlog_id, @PathVariable String pt_id) {
+        projectTaskService.deleteByProjectSequence(backlog_id.toUpperCase(), pt_id.toUpperCase());
+        return new ResponseEntity<String>("Project task %s was deleted successfully".formatted(pt_id.toUpperCase()), HttpStatus.OK);
+    }
 }
