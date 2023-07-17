@@ -35,4 +35,9 @@ public class BacklogController {
         ProjectTask PTtoBeAdded = projectTaskService.addProjectTask(backlog_id, projectTask);
         return new ResponseEntity<>(PTtoBeAdded, HttpStatus.CREATED);
     }
+
+    @GetMapping("/{backlog_id}")
+    public Iterable<ProjectTask> getProjectBacklog(@PathVariable String backlog_id) {
+        return projectTaskService.findBacklog(backlog_id);
+    }
 }
