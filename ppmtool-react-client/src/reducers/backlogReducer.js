@@ -10,7 +10,7 @@ const initialState = {
 };
 
 export default function (state = initialState, action) {
-  switch (action) {
+  switch (action.type) {
     case GET_BACKLOG:
       return {
         ...state,
