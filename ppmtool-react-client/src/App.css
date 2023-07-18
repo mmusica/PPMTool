@@ -16,7 +16,7 @@ img {
 
 .list-group-item.update:hover {
   cursor: -webkit-grab;
-  background-color: rgba(104, 247, 91, 0.664);
+  background-color: rgba(46, 134, 171, 0.363);
 }
 
 .list-group-item.board:hover {
