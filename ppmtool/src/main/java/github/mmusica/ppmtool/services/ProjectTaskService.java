@@ -57,7 +57,7 @@ public class ProjectTaskService {
 
     public Iterable<ProjectTask> findBacklog(String backlogId) {
         if (projectRepository.findByprojectIdentifier(backlogId) == null) {
-            throw new ProjectNotFoundException("Project with id %s not found".formatted(backlogId).toUpperCase());
+            throw new ProjectNotFoundException("Project with id %s not found".formatted(backlogId));
         }
         return projectTaskRepository.findByProjectIdentifierOrderByPriority(backlogId);
     }
