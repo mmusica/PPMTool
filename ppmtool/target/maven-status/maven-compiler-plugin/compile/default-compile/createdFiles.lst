@@ -1,2 +1,5 @@
-github\mmusica\ppmtool\PpmtoolApplication.class
 github\mmusica\ppmtool\domain\Project.class
+github\mmusica\ppmtool\web\ProjectController.class
+github\mmusica\ppmtool\PpmtoolApplication.class
+github\mmusica\ppmtool\services\ProjectService.class
+github\mmusica\ppmtool\repositories\ProjectRepository.class
