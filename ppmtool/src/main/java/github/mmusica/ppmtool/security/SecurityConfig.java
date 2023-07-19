@@ -28,10 +28,7 @@ public class SecurityConfig {
                 .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
                 .authorizeHttpRequests()
                 .requestMatchers(
-                        "/api/v1/auth/**",
-                        "/v2/api-docs",
-                        "/v3/api-docs",
-                        "/v3/api-docs/**",
+                        "/api/users/**",
                         "/swagger-resources",
                         "/swagger-resources/**",
                         "/configuration/ui",
