@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Added DELETE call for ProjectTasks and in general fixed relationships">
-      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/actions/backlogActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/actions/backlogActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/components/ProjectBoard/ProjectTasks/UpdateProjectTasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/components/ProjectBoard/ProjectTasks/UpdateProjectTasks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/ProjectTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/BacklogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/BacklogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="add_project_tasks_backend" />
+        <entry key="$PROJECT_DIR$/.." value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
