@@ -3,6 +3,7 @@ package github.mmusica.ppmtool.web;
 import github.mmusica.ppmtool.domain.User;
 import github.mmusica.ppmtool.services.MapValidationErrorService;
 import github.mmusica.ppmtool.services.UserService;
+import github.mmusica.ppmtool.validator.UserValidator;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,21 +20,25 @@ public class UserController {
 
     final MapValidationErrorService mapValidationErrorService;
     final UserService userService;
+    final UserValidator userValidator;
 
     @Autowired
-    public UserController(MapValidationErrorService mapValidationErrorService, UserService userService) {
+    public UserController(MapValidationErrorService mapValidationErrorService, UserService userService, UserValidator userValidator) {
         this.mapValidationErrorService = mapValidationErrorService;
         this.userService = userService;
+        this.userValidator = userValidator;
     }
 
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@Valid @RequestBody User user, BindingResult result) {
 
+        userValidator.validate(user, result);
         //validate passwords
         ResponseEntity<?> errorMap = mapValidationErrorService.getFieldNameErrorMap(result);
         if (errorMap != null) {
             return errorMap;
         }
+        user.setConfirmPassword("");
         User newUser = userService.saveUser(user);
         return new ResponseEntity<>(newUser, HttpStatus.OK);
     }

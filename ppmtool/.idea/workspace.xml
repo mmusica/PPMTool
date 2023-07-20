@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Added POST for user">
+    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="User exception handling for duplicate users">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/exceptions/CustomResponseEntityExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/PpmtoolApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/PpmtoolApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ppmtool-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ppmtool-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-07-12T12-39-19_694.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-github.mmusica.ppmtool.PpmtoolApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/github.mmusica.ppmtool.PpmtoolApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/github/mmusica/ppmtool/PpmtoolApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +31,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/6.0.10/spring-context-6.0.10.jar!/org/springframework/validation/BindException.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -187,7 +176,14 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1689770229692</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="User exception handling for duplicate users">
+      <option name="closed" value="true" />
+      <created>1689771206693</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1689771206693</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,7 +222,8 @@
     <MESSAGE value="Added Exception handling for ProjectTasks" />
     <MESSAGE value="Adding Spring security" />
     <MESSAGE value="Added POST for user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added POST for user" />
+    <MESSAGE value="User exception handling for duplicate users" />
+    <option name="LAST_COMMIT_MESSAGE" value="User exception handling for duplicate users" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
