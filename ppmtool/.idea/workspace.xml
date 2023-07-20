@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="User exception handling for duplicate users">
+    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Added more errors for user registration (password matching, min password length)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/web/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +186,14 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1689771206693</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="Added more errors for user registration (password matching, min password length)">
+      <option name="closed" value="true" />
+      <created>1689842001146</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1689842001146</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +233,8 @@
     <MESSAGE value="Adding Spring security" />
     <MESSAGE value="Added POST for user" />
     <MESSAGE value="User exception handling for duplicate users" />
-    <option name="LAST_COMMIT_MESSAGE" value="User exception handling for duplicate users" />
+    <MESSAGE value="Added more errors for user registration (password matching, min password length)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more errors for user registration (password matching, min password length)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
