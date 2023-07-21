@@ -9,10 +9,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -35,12 +37,15 @@ public class User implements UserDetails {
 
     @NotBlank(message = "Password field is required")
     private String password;
+
     @Transient
     private String confirmPassword;
 
     private Date created_at;
-
     private Date updated_at;
+
+    @Enumerated
+    private Role role;
 
     //one to many with Project
     @PrePersist
@@ -56,7 +61,7 @@ public class User implements UserDetails {
     @JsonIgnore
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return List.of(new SimpleGrantedAuthority(role.name()));
     }
 
     @JsonIgnore
