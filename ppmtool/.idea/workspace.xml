@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="User exception handling for duplicate users">
+    <list default="true" id="57e69449-b0d5-4d93-a960-4bf3839641c4" name="Changes" comment="Token generation and JwtsAuthenticationFilter added and functional!">
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/validator/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/validator/UserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/github/mmusica/ppmtool/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/repositories/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/security/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/github/mmusica/ppmtool/web/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +60,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Uedemy project/Full Stack Project Spring Boot 2.0, ReactJS, Redux/PPMTool/ppmtool",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Uedemy project/Full Stack Project Spring Boot 2.0, ReactJS, Redux/PPMTool/ppmtool&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="github.mmusica.ppmtool.payload" />
@@ -208,7 +197,28 @@
       <option name="presentableId" value="LOCAL−00013" />
       <updated>1689771206693</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL−00014" summary="Token generation and JwtsAuthenticationFilter added and functional!">
+      <option name="closed" value="true" />
+      <created>1689933409249</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1689933409249</updated>
+    </task>
+    <task id="LOCAL−00015" summary="Token generation and JwtsAuthenticationFilter added and functional!">
+      <option name="closed" value="true" />
+      <created>1689933649586</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1689933649586</updated>
+    </task>
+    <task id="LOCAL−00016" summary="Token generation and JwtsAuthenticationFilter added and functional!">
+      <option name="closed" value="true" />
+      <created>1689933654421</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1689933654421</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +258,8 @@
     <MESSAGE value="Adding Spring security" />
     <MESSAGE value="Added POST for user" />
     <MESSAGE value="User exception handling for duplicate users" />
-    <option name="LAST_COMMIT_MESSAGE" value="User exception handling for duplicate users" />
+    <MESSAGE value="Token generation and JwtsAuthenticationFilter added and functional!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Token generation and JwtsAuthenticationFilter added and functional!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
