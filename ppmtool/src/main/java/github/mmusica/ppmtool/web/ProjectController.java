@@ -7,10 +7,11 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/project")
@@ -27,29 +28,32 @@ public class ProjectController {
     }
 
     @PostMapping("")
-    public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project, BindingResult result) {
+    public ResponseEntity<?> createNewProject(@Valid @RequestBody Project project,
+                                              BindingResult result,
+                                              @AuthenticationPrincipal UserDetails userDetails) {
+
         var errorMap = mapValidationErrorService.getFieldNameErrorMap(result);
         if (errorMap != null) return errorMap;
-        var projectCreated = projectService.saveOrUpdateProject(project);
+        var projectCreated = projectService.saveOrUpdateProject(project, userDetails.getUsername());
         return new ResponseEntity<>(projectCreated, HttpStatus.CREATED);
     }
 
     @GetMapping("{projectId}")
-    public ResponseEntity<?> getProjectById(@PathVariable String projectId) {
+    public ResponseEntity<?> getProjectById(@PathVariable String projectId, @AuthenticationPrincipal UserDetails userDetails) {
 
-        var project = projectService.findProjectByIdentifier(projectId);
+        var project = projectService.findProjectByIdentifier(projectId, userDetails.getUsername());
         return new ResponseEntity<>(project, HttpStatus.OK);
     }
 
     @GetMapping("/all")
-    public Iterable<Project> getAllProjects() {
-        return projectService.findAllProjects();
+    public Iterable<Project> getAllProjects(@AuthenticationPrincipal UserDetails userDetails) {
+        return projectService.findAllProjects(userDetails.getUsername());
     }
 
 
     @DeleteMapping("{projectId}")
-    public ResponseEntity<?> deleteProjectById(@PathVariable String projectId) {
-        projectService.deleteProjectByIdentifier(projectId);
+    public ResponseEntity<?> deleteProjectById(@PathVariable String projectId, @AuthenticationPrincipal UserDetails userDetails) {
+        projectService.deleteProjectByIdentifier(projectId, userDetails.getUsername());
         return new ResponseEntity<>("Deleted", HttpStatus.OK);
     }
 
