@@ -1,0 +1,7 @@
+
+i	java:S116 "URename this field "start_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ı³W
+m	java:S116#"SRename this field "end_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½¸Ç¢ÿÿÿÿÿ
+j	java:S116("URename this field "created_At" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â›Ü’
+o	java:S116+"URename this field "updated_At" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Î¢ùÿÿÿÿ
+—
+java:S11866"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¬ô›

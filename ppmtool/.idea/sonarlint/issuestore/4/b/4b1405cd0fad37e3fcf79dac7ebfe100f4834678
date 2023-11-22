@@ -1,0 +1,5 @@
+
+t
+java:S22934"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ÿ¨ÎÂÿÿÿÿÿ
+o	java:S116-"URename this field "created_at" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±“¡ıüÿÿÿÿ
+j	java:S116."URename this field "updated_at" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğüı

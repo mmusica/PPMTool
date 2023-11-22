@@ -1,0 +1,20 @@
+
+t
+java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŽÝ³Ðþÿÿÿÿ
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽãžO
+e	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿÏª*
+k	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„ùü÷ÿÿÿÿÿ
+f	java:S117-"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îËØ“
+k	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼–ˆ¥ýÿÿÿÿ
+e	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŽãžO
+k	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼–ˆ¥ýÿÿÿÿ
+f	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª”„Ó
+k	java:S117G"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÏ¦ƒÿÿÿÿÿ
+A
+java:S1452"&Remove usage of generic wildcard type.(ØÍ‘ºøÿÿÿÿ
+<
+java:S1452-"&Remove usage of generic wildcard type.(îËØ“
+<
+java:S14525"&Remove usage of generic wildcard type.(šÛÀð
+<
+java:S1452F"&Remove usage of generic wildcard type.(ª”„Ó
