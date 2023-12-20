@@ -1,5 +1,5 @@
 # Getting started
-This site serves as a little project planning management tool
+This site serves as a little project portfolio management tool
 * 2 parts - FRONTEND and BACKEND
 * For the backend:
   * Go to ppmtool folder 
