@@ -5,6 +5,7 @@ This site serves as a little project planning management tool
   * Go to ppmtool folder 
   * Open terminal and run
    `docker compose up` for a new database
+  * Also run `mvn clean package` for the compile 
   * Run the SpringBoot app!
  
 * For the frontend (backend has to be working first)
