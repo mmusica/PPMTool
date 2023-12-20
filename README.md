@@ -1,4 +1,5 @@
 # Getting started
+This site serves as a little project planning management tool
 * 2 parts - FRONTEND and BACKEND
 * For the backend:
   * Go to ppmtool folder 
@@ -12,4 +13,4 @@
    `npm install`
   * After that, run `npm start`
  
-*Website should now be opened to clicking around!
+The website should now be accessible. Start by exploring the dashboard, and then try creating, deleting, updating projects, and managing project tasks.
